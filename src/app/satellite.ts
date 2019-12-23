@@ -5,14 +5,6 @@ type: string;
 operational: boolean;
 launchDate: string;
 
-// shouldShowWarning():boolean{
-//     if(this.type.toLowerCase() === "Space Debris"){
-//         return true;
-//     }else{
-//         return false;
-//     }
-//     }
-
 constructor(name: string, type: string, launchDate: string, orbitType: string, operational: boolean) {
     this.name = name,
     this.orbitType = orbitType,
