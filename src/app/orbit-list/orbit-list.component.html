@@ -9,7 +9,7 @@
    </tr>
    <tr *ngFor="let satellitesArray of satellites">
         <td>{{satellitesArray.name}}</td>
-        <td>{{satellitesArray.type}}</td>
+        <td [class.warning]="satellitesArray.shouldShowWarning()">{{satellitesArray.type}}</td>
         <td>{{satellitesArray.operational}}</td>
         <td>{{satellitesArray.orbitType}}</td>
         <td>{{satellitesArray.launchDate}}</td>
